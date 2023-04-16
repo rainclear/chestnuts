@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/rainclear/oaknuts/pkg/config"
-	"github.com/rainclear/oaknuts/pkg/models"
-	"github.com/rainclear/oaknuts/pkg/render"
+	"github.com/rainclear/chestnuts/pkg/config"
+	"github.com/rainclear/chestnuts/pkg/models"
+	"github.com/rainclear/chestnuts/pkg/render"
 )
 
 // Repo the repository used by the handlers

@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/rainclear/oaknuts/pkg/config"
-	"github.com/rainclear/oaknuts/pkg/handlers"
+	"github.com/rainclear/chestnuts/pkg/config"
+	"github.com/rainclear/chestnuts/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {
@@ -18,6 +18,9 @@ func routes(app *config.AppConfig) http.Handler {
 
 	mux.Get("/", handlers.Repo.Home)
 	mux.Get("/about", handlers.Repo.About)
+
+	fileServer := http.FileServer(http.Dir("./static/"))
+	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 
 	return mux
 }

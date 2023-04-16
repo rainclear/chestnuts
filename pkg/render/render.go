@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/rainclear/oaknuts/pkg/config"
-	"github.com/rainclear/oaknuts/pkg/models"
+	"github.com/rainclear/chestnuts/pkg/config"
+	"github.com/rainclear/chestnuts/pkg/models"
 )
 
 var functions = template.FuncMap{}

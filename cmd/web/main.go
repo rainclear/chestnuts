@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/rainclear/oaknuts/pkg/config"
-	"github.com/rainclear/oaknuts/pkg/handlers"
-	"github.com/rainclear/oaknuts/pkg/render"
+	"github.com/rainclear/chestnuts/pkg/config"
+	"github.com/rainclear/chestnuts/pkg/handlers"
+	"github.com/rainclear/chestnuts/pkg/render"
 )
 
 const portNumber = ":8080"
